@@ -11,4 +11,16 @@ function Nav(){
     )
 }
 
-export default Nav;
+function NavDynamic(props){
+    return(
+        <nav className="main-nav">
+            <ul>
+            {props.items.map((item, index) => (
+                <li key={index}>{item}</li> // Always use a unique key when mapping
+            ))}
+            </ul>
+        </nav>
+    )
+}
+
+export default NavDynamic;
