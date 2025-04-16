@@ -24,6 +24,10 @@ function App(){
             <h3>Apple component as a child inside Bag component</h3>
             <TheBag children={<TheApples color="yellow" number="5" />}></TheBag>
             <TheBag children={<ThePears friend="Alexy" />}></TheBag>
+            <h3>Apple/Pears component as a child inside Bag component - Different syntax</h3>
+            <TheBag>
+                <TheApples color="yellow" number="5" />
+            </TheBag>
         </div>
     )
 }
