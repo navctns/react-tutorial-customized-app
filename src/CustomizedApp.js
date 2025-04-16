@@ -7,6 +7,9 @@ import TheHeading from './components/passing-props/TheHeading.js';
 import TheBag from './components/special-prop-children/TheBag.js';
 import TheApples from './components/special-prop-children/TheApples.js';
 import ThePears from './components/special-prop-children/ThePears.js';
+import ThePromo from './components/styling-methods/ThePromo.js';
+import ThePromoInlineStyling from './components/styling-methods/ThePromoInlineStyling.js';
+import ThePromoInlineStylingUsingOutsideStyleObject from './components/styling-methods/ThePromoInlineStylingUsingOutsideStyleObject.js';
 function App(){
     return (
         <div className="container">
@@ -28,6 +31,14 @@ function App(){
             <TheBag>
                 <TheApples color="yellow" number="5" />
             </TheBag>
+            <h3>Methods of Styling</h3>
+            <p>Here are different methods of styling</p>
+            <h4>By adding link element to index.html to add css file</h4>
+            <ThePromo heading="Promo" promoSubHeading="Sub Heading"></ThePromo>
+            <h4>Inline Styling</h4>
+            <ThePromoInlineStyling heading="Promo" promoSubHeading="Sub Heading"></ThePromoInlineStyling>
+            <h4>Inline Styling ( using outside Style object)</h4>
+            <ThePromoInlineStylingUsingOutsideStyleObject heading="Promo" promoSubHeading="Sub Heading"></ThePromoInlineStylingUsingOutsideStyleObject>
         </div>
     )
 }

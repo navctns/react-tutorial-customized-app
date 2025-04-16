@@ -15,3 +15,9 @@ code {
   margin:auto;
   max-width: 1280px;
 }
+.promo-section{
+  font-weight: bold;
+  line-height: 20px;
+  padding:16px;
+  background-color: lightblue;
+}
