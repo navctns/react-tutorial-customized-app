@@ -10,6 +10,8 @@ import ThePears from './components/special-prop-children/ThePears.js';
 import ThePromo from './components/styling-methods/ThePromo.js';
 import ThePromoInlineStyling from './components/styling-methods/ThePromoInlineStyling.js';
 import ThePromoInlineStylingUsingOutsideStyleObject from './components/styling-methods/ThePromoInlineStylingUsingOutsideStyleObject.js';
+import NavArrowFunction from './components/arrow-function-components/NavArrowFunction.js';
+import ComponentEmbeddedJsx from './components/embeded-jsx/ComponentEmbeddedJsx.js';
 function App(){
     return (
         <div className="container">
@@ -39,6 +41,11 @@ function App(){
             <ThePromoInlineStyling heading="Promo" promoSubHeading="Sub Heading"></ThePromoInlineStyling>
             <h4>Inline Styling ( using outside Style object)</h4>
             <ThePromoInlineStylingUsingOutsideStyleObject heading="Promo" promoSubHeading="Sub Heading"></ThePromoInlineStylingUsingOutsideStyleObject>
+            <h5>Arrow function components</h5>
+            <NavArrowFunction first="joy"></NavArrowFunction>
+            <h5>Component Embedded JSX</h5>
+            <p>Here is a component embedded JSX</p>
+            <ComponentEmbeddedJsx first="Mahadhevan" last="Nair"></ComponentEmbeddedJsx>
         </div>
     )
 }
