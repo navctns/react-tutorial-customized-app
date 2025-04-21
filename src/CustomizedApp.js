@@ -15,11 +15,18 @@ import ComponentEmbeddedJsx from './components/embeded-jsx/ComponentEmbeddedJsx.
 import ImgItem from './components/dynamic-html-attributes/DynamicHtmlAttributes.js';
 import Example from './components/expressions-as-props/ExpressionsAsProps1.js';
 import ExpressionsAsProps2 from './components/expressions-as-props/ExpressionsAsProps2.js';
+import LogoImg from './logo.svg';
 const bool = false;
 const str1 = 'just';
+
+function LogoImage(){
+    const logoPic = <img src={LogoImg} alt="Logo" style={{height:'4rem'}} />
+    return logoPic;
+}
 function App(){
     return (
         <div className="container">
+            <LogoImage />
             <NavDynamic items={["Home","About","Services","Contact"]}/>
             <Promo/>
             <Intro1></Intro1>
