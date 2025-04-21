@@ -13,6 +13,10 @@ import ThePromoInlineStylingUsingOutsideStyleObject from './components/styling-m
 import NavArrowFunction from './components/arrow-function-components/NavArrowFunction.js';
 import ComponentEmbeddedJsx from './components/embeded-jsx/ComponentEmbeddedJsx.js';
 import ImgItem from './components/dynamic-html-attributes/DynamicHtmlAttributes.js';
+import Example from './components/expressions-as-props/ExpressionsAsProps1.js';
+import ExpressionsAsProps2 from './components/expressions-as-props/ExpressionsAsProps2.js';
+const bool = false;
+const str1 = 'just';
 function App(){
     return (
         <div className="container">
@@ -50,6 +54,13 @@ function App(){
             <h5>Image item</h5>
             <p>Dynamic image component</p>
             <ImgItem url="./logo.svg" alt="Dynamic Image" />
+            <h4>Expressions as props</h4>
+            <Example toggleBoolean={!bool}/>
+            <h5>Math operators and string manipulations can be passed as props</h5>
+            <ExpressionsAsProps2 
+            toggleBoolean={!bool}
+            math={(10+20)/3}
+            str={str1 + ' '+ 'another' + ' ' + 'string'} />
         </div>
     )
 }
