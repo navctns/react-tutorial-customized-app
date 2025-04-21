@@ -12,6 +12,7 @@ import ThePromoInlineStyling from './components/styling-methods/ThePromoInlineSt
 import ThePromoInlineStylingUsingOutsideStyleObject from './components/styling-methods/ThePromoInlineStylingUsingOutsideStyleObject.js';
 import NavArrowFunction from './components/arrow-function-components/NavArrowFunction.js';
 import ComponentEmbeddedJsx from './components/embeded-jsx/ComponentEmbeddedJsx.js';
+import ImgItem from './components/dynamic-html-attributes/DynamicHtmlAttributes.js';
 function App(){
     return (
         <div className="container">
@@ -46,6 +47,9 @@ function App(){
             <h5>Component Embedded JSX</h5>
             <p>Here is a component embedded JSX</p>
             <ComponentEmbeddedJsx first="Mahadhevan" last="Nair"></ComponentEmbeddedJsx>
+            <h5>Image item</h5>
+            <p>Dynamic image component</p>
+            <ImgItem url="./logo.svg" alt="Dynamic Image" />
         </div>
     )
 }
