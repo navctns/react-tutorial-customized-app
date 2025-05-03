@@ -15,15 +15,16 @@ import ComponentEmbeddedJsx from './components/embeded-jsx/ComponentEmbeddedJsx.
 import ImgItem from './components/dynamic-html-attributes/DynamicHtmlAttributes.js';
 import Example from './components/expressions-as-props/ExpressionsAsProps1.js';
 import ExpressionsAsProps2 from './components/expressions-as-props/ExpressionsAsProps2.js';
+import Btn from './components/event-handling/Btn.js';
 import LogoImg from './logo.svg';
 const bool = false;
 const str1 = 'just';
 
-function LogoImage(){
-    const logoPic = <img src={LogoImg} alt="Logo" style={{height:'4rem'}} />
+function LogoImage() {
+    const logoPic = <img src={LogoImg} alt="Logo" style={{ height: '4rem' }} />
     return logoPic;
 }
-function App(){
+function App() {
     return (
         <div className="container">
             <LogoImage />
@@ -68,7 +69,10 @@ function App(){
             toggleBoolean={!bool}
             math={(10+20)/3}
             str={str1 + ' '+ 'another' + ' ' + 'string'} />
+            <h5>Event Handling</h5>
+            <Btn />
         </div>
+        
     )
 }
 
